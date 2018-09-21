@@ -140,7 +140,7 @@ module.exports = function (options) {
                 };
 
                 // parentheses are only needed when a scope is present
-                var scope = answers.scope.trim();
+                var scope = answers.scope ? answers.scope.trim() : '';
                 scope = scope ? '(' + answers.scope.trim() + ')' : '';
 
                 // Hard limit this line
