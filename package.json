@@ -1,0 +1,41 @@
+{
+  "name": "generate-cz-changelog",
+  "version": "0.0.1",
+  "description": "The helper of cz-conventional-changelog，generate prompter of custom in your project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangb159/generate-cz-changelog.git"
+  },
+  "keywords": [
+    "cz-conventional-changelog",
+    "generate-changelog"
+  ],
+  "author": "Younger <250069495@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yangb159/generate-cz-changelog/issues"
+  },
+  "homepage": "https://github.com/yangb159/generate-cz-changelog#readme",
+  "dependencies": {
+    "conventional-commit-types": "^2.0.0",
+    "lodash.assign": "^4.2.0",
+    "lodash.map": "^4.5.1",
+    "longest": "^1.0.1",
+    "right-pad": "^1.0.1",
+    "word-wrap": "^1.0.3"
+  },
+  "devDependencies": {
+    "commitizen": "2.9.6",
+    "semantic-release": "^6.3.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./index.js"
+    }
+  }
+}
